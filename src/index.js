@@ -47,9 +47,9 @@ onDragEnd=result=>{
       this.state.columnOrder.map((columnId)=>{
       const column = this.state.columns[columnId];
       const tasks=column.taskIds.map(taskId=>this.state.tasks[taskId]);
-
+ 
     //   const tasks=column.taskIds.map(taskId=>this.state.tasks[taskId]);
-       return <Column key={column.id} column={column} tasks={tasks}/>;
+       return <Column key={column.id} column={column} tasks={tasks} />;
     })}
   </DragDropContext>
   )
